@@ -1,0 +1,24 @@
+Vasya/PR2/List.c:11:1: error: Memory leak: temp [memleak]
+}
+^
+Vasya/PR2/Checks.c:19:12: error: Uninitialized variable: str [uninitvar]
+ if(strlen(str) <= num){
+           ^
+Vasya/PR2/List.c:8:4: error: Memory is allocated but not initialized: temp [uninitdata]
+ (*temp).count = 0;
+   ^
+Vasya/PR2/List.c:31:11: error: Memory is allocated but not initialized: item [uninitdata]
+ strcpy((*item).Date,GetStrt(11));
+          ^
+Vasya/PR2/List.c:118:10: error: Uninitialized variable: pt [uninitvar]
+    pt = pt->next; // переход к следующему узлу
+         ^
+Vasya/PR2/List.c:118:10: error: Uninitialized struct member: pt.next [uninitStructMember]
+    pt = pt->next; // переход к следующему узлу
+         ^
+Vasya/PR2/List.c:102:11: error: Memory is allocated but not initialized: item [uninitdata]
+ strcpy((*item).Date,GetStrt(11));
+          ^
+Vasya/PR2/List.c:117:9: error: Uninitialized variable: pt [uninitvar]
+    p = pt;
+        ^

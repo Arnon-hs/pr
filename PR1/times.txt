@@ -1,0 +1,25 @@
+time gcc -o0 Main.c -s -lm 
+
+real    0m0,386s
+user    0m0,045s
+sys     0m0,279s
+time gcc -o1 Main.c  -s -lm                                                                                                                                           
+
+real    0m0,369s
+user    0m0,061s
+sys     0m0,263s
+time gcc -o3 Main.c -s -lm                                                                                                                                           
+
+real    0m0,391s
+user    0m0,076s
+sys     0m0,217s
+time gcc -ofast Main.c -s -lm
+
+real    0m0,363s
+user    0m0,091s
+sys     0m0,200s
+time gcc -os Main.c -s -lm 
+
+real    0m0,407s
+user    0m0,030s
+sys     0m0,247s
